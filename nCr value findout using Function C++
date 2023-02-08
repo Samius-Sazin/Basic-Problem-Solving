@@ -9,11 +9,16 @@ int main()
     {
         int n,r;
         cin>>n>>r;
+        
+        /*
         int o=ncr(n); //calling function to get n! value
         int p=ncr(r); //calling function to get r! value
         int q=ncr(n-r);//calling function to get (n-r)! value
         int result=o/(p*q);
-        cout<<n<<"C"<<r<<" = "<<result<<endl;;
+        */
+        
+        int result = ncr(n)/(ncr(r)*ncr(n-r));
+        cout<<n<<"C"<<r<<" = "<<result<<endl;
     }
     return 0;
 }
