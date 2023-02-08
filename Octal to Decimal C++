@@ -1,0 +1,31 @@
+/*
+n=137
+Octal(137) = 95
+*/
+#include<iostream>
+#include<math.h>
+using namespace std;
+int convert(int t);
+
+int main()
+{
+    int m,n;
+    cin>>n;
+    m=convert(n);
+    cout<<"Octal("<<n<<") = "<<m<<endl;
+
+    return 0;
+}
+int convert(int t)
+{
+    int r,i=0;
+    float sum=0;
+    while(t>0)
+    {
+        r=t%10;
+        t=t/10;
+        sum+=r*pow(8,i);
+        i++;
+    }
+    return sum;
+}
