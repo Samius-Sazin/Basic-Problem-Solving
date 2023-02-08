@@ -1,0 +1,39 @@
+/*
+a=5,b=4,c=3
+Its Pythagorian Triplet
+*/
+#include<iostream>
+using namespace std;
+bool pytagoras(int x,int y,int z);
+
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(pytagoras(a,b,c)) cout<<"Its Pythagorian Triplet \n";
+    else cout<<"Not Pythagorian Triplet\n";
+    return 0;
+}
+
+bool pytagoras(int x,int y,int z)
+{
+    int M=x;
+    if(y>M) M=y;
+    if(z>M) M=z;
+
+    if(M==x)
+    {
+        if(x*x==y*y+z*z) return true;
+        else return false;
+    }
+    if(M==y)
+    {
+        if(y*y==x*x+z*z) return true;
+        else return false;
+    }
+    if(M==z)
+    {
+        if(z*z==y*y+x*x) return true;
+        else return false;
+    }
+}
