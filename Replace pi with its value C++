@@ -1,0 +1,35 @@
+/*
+INPUT : pipxpiii
+Output: 3.14px3.14ii
+*/
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    cout<<"INPUT : ";
+    getline(cin,s);
+    cout<<"Output: ";
+
+    int i,j;
+    for(i=0; i<=s.length(); i++)
+    {
+        for(j=i+1; j<=s.length(); j++)
+        {
+            if(s[i]=='p' && s[j]=='i')
+            {
+                cout<<"3.14";
+                i=i+1;
+            }
+            else
+            {
+                cout<<s[i];
+            }
+            break;
+        }
+    }
+
+    return 0;
+}
