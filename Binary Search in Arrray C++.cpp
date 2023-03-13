@@ -25,10 +25,10 @@ int bin_search(int *A,int el,int K)
 int main()
 {
     int arr[]= {10,20,30,40,50,60,70,80,89};//Binary search work if and only if numbers are in either increasing form or decreasing form;
-    int n=sizeof(arr)/sizeof(int);
+    int size = sizeof(arr)/sizeof(int);
     int key;
     cin>>key;
-    int res = bin_search(arr,n,key);
+    int res = bin_search(arr,size,key);
 
     if(res != -1) cout<<"Element "<<key<<" is found at position "<<res+1<<endl;
     else cout<<"Element "<<key<<" not found"<<endl;
