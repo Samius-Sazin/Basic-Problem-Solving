@@ -1,6 +1,7 @@
 // Find first occurance of number in an Array
-// ARRAY - 2 4 7 9 3 5 8 3 4 2
-// 3 found at position 4
+// ARRAY - 9 3 5 8 3 4
+// Index - 0 1 2 3 4 5
+// 3 found at position 2
 
 #include<iostream>
 using namespace std;
@@ -21,9 +22,11 @@ int first_occurance(int *arr, int n, int key)
 int main()
 {
     int n, key, res, arr[] = {2, 4, 7, 9, 3, 5, 8, 3, 4, 2};
-
     n = sizeof(arr)/sizeof(int);
-    cout<<"Enter Element to found : "<<endl;
+    for(int i=0; i<n; i++)
+    cout<<arr[i]<<" ";
+
+    cout<<"\nEnter Element to found : ";
     cin>>key;
 
     res = first_occurance(arr, n, key);
