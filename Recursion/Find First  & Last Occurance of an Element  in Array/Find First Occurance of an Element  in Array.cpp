@@ -6,6 +6,15 @@
 #include<iostream>
 using namespace std;
 
+//method 1:
+int first_occurance(int *arr, int n, int i, int key)
+{
+    if(i == n) return -1;
+    if(arr[i] == key) return i;
+    return first_occurance(arr, n, i+1, key);
+}
+
+//method 2:
 int first_occurance(int *arr, int n, int key)
 {
     if(n == 0) return -1;
@@ -29,11 +38,11 @@ int main()
     cout<<"\nEnter Element to found : ";
     cin>>key;
 
-    res = first_occurance(arr, n, key);
+    //res = first_occurance(arr, n, key);
+    res = first_occurance(arr, n, 0, key);
 
     if(res != -1) cout<<"Element Found at Position : "<<res<<endl;
     else cout<<"Element Not Found"<<endl;
 
     return 0;
 }
-
