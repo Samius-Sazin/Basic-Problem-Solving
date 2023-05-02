@@ -5,9 +5,9 @@ using namespace std;
 
 bool Check_Sorted(int *arr, int n)
 {
-    if(n==1 || n==0) return true;
-    if(arr[0]<arr[1] && Check_Sorted(arr+1, n-1))
-        return true;
+    if(n==1 || n==0) return true;                   // if the array is in Descending order
+    if(arr[0] < arr[1] && Check_Sorted(arr+1, n-1)) // if(arr[0] > arr[1] && Check_Sorted(arr+1, n-1))
+        return true;                                //     return true;
     return false;
 }
 
