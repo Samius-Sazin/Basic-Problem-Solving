@@ -1,5 +1,5 @@
-//Input : pippxxppiixipi
-//Output : 3.14ppxxp3.14ixi3.14
+//Input : aaabbceed
+//Output : abced
 
 #include<iostream>
 using namespace std;
