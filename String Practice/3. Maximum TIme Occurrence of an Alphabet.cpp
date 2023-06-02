@@ -1,7 +1,7 @@
 /*
 samius sazin
 Here 's' occurres maximum of 3 times
-So, both print 3 & s
+So, print both 3 & s
 */
 
 #include<iostream>
