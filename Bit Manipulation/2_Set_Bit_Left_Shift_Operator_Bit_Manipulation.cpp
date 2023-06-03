@@ -1,3 +1,11 @@
+/*
+5 = 0101
+pos:3210
+
+Need to set 1 at position 1.
+
+Final = 0111 = 7
+*/
 #include <iostream>
 using namespace std;
 
