@@ -1,3 +1,6 @@
+//goto conditional statement
+
+
 #include<iostream>
 using namespace std;
 
